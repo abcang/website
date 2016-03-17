@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title><%= page_title(current_path) %></title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script>
+    	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-56435049-1', 'auto');
+  		ga('send', 'pageview');
+    </script>
+
+    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :"github-extract" %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body>
+    <nav class="navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><%= data.site.title %></a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header class="header">
+        <a class="h1" href="/"><%= data.site.title %></a>
+      </header>
+
+      <div class="contents">
+        <div class="row">
+          <div id="menu" class="collapse col-sm-4 col-md-3 sidebar" aria-expanded="false">
+            <ul>
+              <% data.menu.additional.each do |site| %>
+                <li class="menu-item"><%= link_to site[:title], site[:url] %></li>
+              <% end %>
+            </ul>
+            <hr>
+            <ul>
+              <% side_menu(current_path, data.menu.exclusion).each do |item| %>
+                <li><%= link_to item[:title], item[:url], (item[:children] && ({ :class => 'active' })) %></li>
+                <% if item[:children] && !item[:children].empty? %>
+                  <li class="children">
+                    <ul>
+                      <% item[:children].each do |child|%>
+                        <li><%= link_to child[:title], child[:url] %></li>
+                      <% end %>
+                    </ul>
+                  </li>
+                <% end %>
+              <% end %>
+            </ul>
+          </div>
+
+          <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main markdown-body">
+            <%= yield %>
+
+            <% contents_list(current_path).each do |item| %>
+              <div id="<%= item[:name] %>">
+                <%= partial(item[:name]) %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <footer class="footer">Copyright (C) <%= data.site.since %>-<%= Time.now.year %> <%= data.site.title%> All Rights Reserved.</footer>
+      </div>
+    </div>
+  </body>
+</html>

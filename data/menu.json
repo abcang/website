@@ -1,0 +1,13 @@
+{
+  "additional": [
+    {"title": "Profile", "url": "/profile"},
+    {"title": "Blog", "url": "http://blog.abcang.net/"},
+    {"title": "Twitter", "url": "https://twitter.com/ABCanG1015"},
+    {"title": "Github", "url": "https://github.com/ABCanG"},
+    {"title": "Link", "url": "/link"}
+  ],
+  "exclusion": [
+    "profile",
+    "link"
+  ]
+}
