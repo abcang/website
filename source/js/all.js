@@ -5,7 +5,7 @@
 
     $('.children a').on('click', function(e) {
       var href = $(this).attr('href');
-      if (href.startsWith('#')) {
+      if (href[0] === '#') {
         if ($('.navbar-toggle').attr('aria-expanded') == 'true') {
           $('.navbar-toggle').click();
         }
