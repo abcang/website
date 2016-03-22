@@ -1,26 +1,26 @@
 module Helpers
   def side_menu(current_path, exclusion)
-    Dir.glob("source/*/").select { |dir|
-      dir_name = dir.match(%r{/(.+)/})[1]
-      File.exist?("#{dir}index.html.md") && !exclusion.include?(dir_name)
-    }.sort.map { |dir|
-      dir_name = dir.match(%r{/(.+)/})[1]
+    Dir.glob("source/*/").select { |dir_path|
+      dir_name = File.basename dir_path
+      File.exist?("#{dir_path}index.html.md") && !exclusion.include?(dir_name)
+    }.map { |dir_path|
+      dir_name = File.basename dir_path
       item = {}
       item[:url] = "/#{dir_name}"
-      item[:title] = get_title("#{dir}index.html.md")
-      item[:children] = contents_list(current_path) if "#{dir_name}/" == current_path.scan(%r{^.+?/})[0]
+      item[:title] = get_title("#{dir_path}index.html.md")
+      item[:children] = contents_list(current_path) if dir_name == File.dirname(current_path)
       item
     }.sort {|a, b| title_cmp(a, b) }
   end
 
   def contents_list(current_path)
-    current_dir = "source/#{current_path.scan(%r{^.+?/})[0]}"
-    Dir.glob("#{current_dir}_*.md").map { |md|
-      md_name = md.match(/_(.+)\.md/)[1]
+    current_dir = "source/#{File.dirname(current_path)}/"
+    Dir.glob("#{current_dir}_*.md").map { |md_path|
+      md_name = File.basename(md_path)
       {
         url: "##{md_name}",
         name: md_name,
-        title: get_title(md)
+        title: get_title(md_path)
       }
     }.sort {|a, b| title_cmp(a, b) }
   end
@@ -32,7 +32,7 @@ module Helpers
   end
 
   def page_title(current_path)
-    get_title("source/#{current_path}.md") + (current_path.include?('/') ? " - #{data.site.title}" : '')
+    get_title("source/#{current_path}.md") + (File.dirname(current_path) == '.' ? " - #{data.site.title}" : '')
   end
 
   def title_cmp(a, b)
