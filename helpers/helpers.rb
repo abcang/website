@@ -32,7 +32,7 @@ module Helpers
   end
 
   def page_title(current_path)
-    get_title("source/#{current_path}.md") + (File.dirname(current_path) == '.' ? " - #{data.site.title}" : '')
+    get_title("source/#{current_path}.md") + (File.dirname(current_path) == '.' ? '' : " - #{data.site.title}")
   end
 
   def title_cmp(a, b)
