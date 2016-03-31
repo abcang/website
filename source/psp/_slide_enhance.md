@@ -9,4 +9,4 @@ PSPGoのスライド機能を拡張するものです。
     * 初リリース
 
 ### ダウンロード
-[slide_enhance1.0.zip](./download/slide_enhance1.0.zip)
+[slide_enhance1.0.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AABamlAXBRzEYjQ20ZR3VDhRa/slide_enhance1.0.zip?dl=0)

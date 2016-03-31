@@ -8,4 +8,4 @@ PSPの内部ブラウザのUserAgentを書き換えます。
     * 初リリース
 
 ### ダウンロード
-[UserAgentFaker1.0.zip](./download/UserAgentFaker1.0.zip)
+[UserAgentFaker1.0.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AABB29KpSN5MZHkv_hSpz7-ea/UserAgentFaker1.0.zip?dl=0)

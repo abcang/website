@@ -9,4 +9,4 @@ ledbatterieを拡張したプラグインです。
     * 初リリース
 
 ### ダウンロード
-[LedBatterie_mod0.1.zip](./download/LedBatterie_mod0.1.zip)
+[LedBatterie_mod0.1.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AABP6AigJqs59dq8rKxI5q4aa/LedBatterie_mod0.1.zip?dl=0)

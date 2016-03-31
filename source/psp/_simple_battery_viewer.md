@@ -13,7 +13,7 @@ HOME画面の日時が表示されているすぐ下にバッテリーの情報�
     * ゲームを終了した時表示が残るのを修正
 
 ### ダウンロード
-[SimpleBatteryViewer1.3.zip](./download/SimpleBatteryViewer1.3.zip)
+[SimpleBatteryViewer1.3.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AAAbXsLG9hLZmenHozNuOPuKa/SimpleBatteryViewer1.3.zip?dl=0)
 
 ### スクリーンショット
 ![](img/simple_battery_viewer.png)

@@ -14,4 +14,4 @@ HOLDで一時停止、HOLDを解除したあとに指定したボタンで再開
     * スレッド停止中にHOME画面からXMBに戻るとフリーズする問題を修正
 
 ### ダウンロード
-[hold_stop1.2.zip](./download/hold_stop1.2.zip)
+[hold_stop1.2.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AABKYEPAIKUHGNMM7htdKZPQa/hold_stop1.2.zip?dl=0)

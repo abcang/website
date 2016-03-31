@@ -13,7 +13,7 @@ HOMEボタン(PSボタン)を押したら表示される画面を拡張できま
     * cushome.prsを更新
 
 ### ダウンロード
-[CustomHOME1.3.4.zip](./download/CustomHOME1.3.4.zip)
+[CustomHOME1.3.4.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AADHZF-CyOSzWFhRy-HfaISta/CustomHOME1.3.4.zip?dl=0)
 
 [wololo.net/talk](http://wololo.net/talk/viewtopic.php?f=26&t=6086&start=0)  
 [CustomHome用おすすめ壁紙](http://firestorage.jp/download/41be33949b36238441261097dd614c472c4847bf)

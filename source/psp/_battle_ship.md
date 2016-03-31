@@ -11,4 +11,4 @@ signedに入ってるのは署名済みなので、未改造でも使えます�
     * 初リリース
 
 ### ダウンロード
-[BattleShip1.0.zip](./download/BattleShip1.0.zip)
+[BattleShip1.0.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AAAVxrPxV6mfj9_HSXQqgZL6a/BattleShip1.0.zip?dl=0)

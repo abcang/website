@@ -9,4 +9,4 @@ volcon
     * 音量やボタン、押す時間を自由に設定出来るようにした。
 
 ### ダウンロード
-[volcon2.0.zip](./download/volcon2.0.zip)
+[volcon2.0.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AADidEE1uJdTXqTmKBuAeAZ_a/volcon2.0.zip?dl=0)

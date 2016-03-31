@@ -15,4 +15,7 @@ PSP1000やOFWより、2000以降のCFW、LCFWほうが早くコピーができ�
     * バグ修正や細かい調整などした。
 
 ### ダウンロード
-[MStoMS1.1.zip](./download/MStoMS1.1.zip)
+[MStoMS1.1.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AADtVKATBkAZvwGYRQ4SOuj7a/MStoMS1.1.zip?dl=0)
+
+### スクリーンショット
+![](img/ms_to_ms.png)

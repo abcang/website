@@ -9,7 +9,7 @@ PSPの内蔵フォントを確認するアプリです。
     * 初リリース
 
 ### ダウンロード
-[FontConfirmation0.1.zip](./download/FontConfirmation0.1.zip)
+[FontConfirmation0.1.zip](https://www.dropbox.com/sh/bc3hz5qsh2mch06/AADtPs9wCWfvk9C_EZHDLYVka/FontConfirmation0.1.zip?dl=0)
 
 ### スクリーンショット
 ![](img/font_confirmation.png)
