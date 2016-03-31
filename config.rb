@@ -53,4 +53,5 @@ activate :deploy do |deploy|
   deploy.deploy_method = :rsync
   deploy.host          = 'abcang.net'
   deploy.path          = 'www'
+  deploy.build_before = true
 end
