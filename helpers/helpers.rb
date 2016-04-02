@@ -16,7 +16,7 @@ module Helpers
   def contents_list(current_path)
     current_dir = "source/#{File.dirname(current_path)}/"
     Dir.glob("#{current_dir}_*.md").map { |md_path|
-      md_name = File.basename(md_path)
+      md_name = File.basename(md_path).scan(/^_(.+)\.md/)[0][0]
       {
         url: "##{md_name}",
         name: md_name,
