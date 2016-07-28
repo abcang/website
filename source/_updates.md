@@ -1,6 +1,10 @@
 更新履歴
 ----
 
+### 2016/07/29
+* [nhk news ranker](/twitterbot/#nhk_news_ranker)のページを追加
+* [slack-twitter-egosa](/tool#slack-twitter-egosa)のページを追加
+
 ### 2016/03/18
 * [Tool](/tool)と[Twitter Bot](/twitterbot)のページを追加
 * サイトをリニューアルしてレスポンシブにした

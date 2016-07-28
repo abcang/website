@@ -68,6 +68,12 @@
   }
 }
 
+.main {
+  .body-item {
+    padding-bottom: 15px;
+  }
+}
+
 nav {
   @media (min-width: 768px) {
     display: none;
