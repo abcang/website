@@ -1,7 +1,7 @@
 add-sshkey-remote
 ----
 
-GithubやBitbucketにSSH鍵を登録するコマンドラインツールです。
+GithubやBitbucketにSSH鍵を登録するコマンドラインツールです。  
 使い方などはGithubのページを見てください。
 
 ### Github

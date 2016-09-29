@@ -1,4 +1,2 @@
 Chrome Extension
 ====
-
-Chrome Extensionです。

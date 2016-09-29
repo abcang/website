@@ -1,7 +1,7 @@
 azpainter-mac
 ----
 
-Linux版のAzPainterをMacで動くように変換するスクリプトです。
+Linux版のAzPainterをMacで動くように変換するスクリプトです。  
 詳しくはGithubのページを見てください。
 
 ### Github

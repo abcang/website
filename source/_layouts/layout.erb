@@ -51,19 +51,22 @@
         <div class="row">
           <div id="menu" class="collapse col-sm-4 col-md-3 sidebar" aria-expanded="false">
             <ul>
-              <% data.menu.additional.each do |site| %>
-                <li class="menu-item"><%= link_to site[:title], site[:url] %></li>
+              <% data.menu.additional.each do |item| %>
+                <li class="menu-item">
+                  <%= link_to item.title, item.url, (current_path.start_with?("#{item.url[1..-1]}/") && { class: 'active' }) %>
+                </li>
               <% end %>
             </ul>
             <hr>
+            <div class="h3 subtitle">Products</div>
             <ul>
-              <% side_menu(current_path, data.menu.exclusion).each do |item| %>
-                <li><%= link_to item[:title], item[:url], (item[:children] && ({ :class => 'active' })) %></li>
-                <% if item[:children] && !item[:children].empty? %>
+              <% side_menu(current_path).each do |item| %>
+                <li><%= link_to item.title, item.url, (item.children && { class: 'active' }) %></li>
+                <% if item.children && !item.children.empty? %>
                   <li class="children">
                     <ul>
-                      <% item[:children].each do |child|%>
-                        <li><%= link_to child[:title], child[:url] %></li>
+                      <% item.children.each do |child|%>
+                        <li><%= link_to child.title, child.url %></li>
                       <% end %>
                     </ul>
                   </li>
@@ -76,13 +79,13 @@
             <%= yield %>
 
             <% contents_list(current_path).each do |item| %>
-              <div class="body-item" id="<%= item[:name] %>">
-                <%= partial(item[:name]) %>
+              <div class="body-item" id="<%= item.name %>">
+                <%= partial(item.name) %>
               </div>
             <% end %>
           </div>
         </div>
-        <footer class="footer">Copyright (C) <%= data.site.since %>-<%= Time.now.year %> <%= data.site.title%> All Rights Reserved.</footer>
+        <footer class="footer clearfix">Copyright (C) <%= data.site.since %>-<%= Time.now.year %> <%= data.site.title%> All Rights Reserved.</footer>
       </div>
     </div>
   </body>

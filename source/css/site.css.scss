@@ -20,9 +20,10 @@
   line-height: 1.6;
   margin: -10px -15px 0;
   background-color: #fcfcfc;
+  padding-left: 0px;
   ul {
-    list-style-type: none;
     padding-left: 0px;
+    list-style-type: none;
   }
   li {
     border-top: 1px solid #efefef;
@@ -43,6 +44,9 @@
       }
     }
   }
+  .subtitle {
+    padding-left: 0.3em;
+  }
 
   position: absolute;
   left: 0px;
@@ -54,16 +58,18 @@
   overflow-y: auto;
   margin: 0;
   @media (min-width: 768px) {
+    position: relative;
     background-color: transparent;
-    display: block;;
-    ul {
-      padding-left: 20px;
-    }
+    display: block;
+    padding-left: 30px;
     li {
       border-left: 2px solid #efefef;
       &.children {
         border-left: none;
       }
+    }
+    .subtitle {
+      padding-left: 0;
     }
   }
 }
@@ -71,6 +77,9 @@
 .main {
   .body-item {
     padding-bottom: 15px;
+  }
+  @media (min-width: 768px) {
+    margin-left: 0;
   }
 }
 
@@ -107,4 +116,10 @@ a {
 
 .row {
   margin: 10px 0;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
 }

@@ -1,4 +1,2 @@
 Twitter Bot
 ====
-
-Twitterのbotです。

@@ -9,7 +9,6 @@ Profile
 * ABCanG1015
 
 ## よく使う言語
-* C
 * Ruby
 * JavaScript
 
