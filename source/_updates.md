@@ -2,7 +2,7 @@
 ----
 
 ### 2016/12/06
-* [bitbucket_pr_commnet](/tool#bitbucket-pr-commnet)のページを追加
+* [bitbucket_pr_comment](/tool#bitbucket-pr-comment)のページを追加
 * [みくもスタンプ](/web#mikumo-stamp)のページを追加
 * Yonkomaのページを削除
 
