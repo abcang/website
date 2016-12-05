@@ -1,6 +1,11 @@
 更新履歴
 ----
 
+### 2016/12/06
+* [bitbucket_pr_commnet](/tool#bitbucket-pr-commnet)のページを追加
+* [みくもスタンプ](/web#mikumo-stamp)のページを追加
+* Yonkomaのページを削除
+
 ### 2016/09/30
 * [nasne-checker](/tool#nasne-checker)のページを追加
 
