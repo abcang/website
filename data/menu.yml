@@ -2,12 +2,12 @@ additional:
   - title: Profile
     url: '/profile'
   - title: Blog
-    url: 'http://abcang.hatenablog.com/'
+    url: 'https://abcang.hatenablog.com/'
   - title: Twitter
-    url: 'https://twitter.com/ABCanG1015'
+    url: 'https://twitter.com/abcang1015'
+  - title: Pawoo
+    url: 'https://pawoo.net/@abcang'
   - title: Github
-    url: 'https://github.com/ABCanG'
+    url: 'https://github.com/abcang'
   - title: Qiita
-    url: 'http://qiita.com/ABCanG1015'
-  - title: Link
-    url: '/link'
+    url: 'https://qiita.com/abcang'

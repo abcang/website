@@ -1,9 +1,6 @@
 更新履歴
 ----
 
-### 2016/12/31
-* [Qiita Feed Filter](/userscript#qiita-feed-filter)を追加
-
 ### 2016/12/06
 * [bitbucket_pr_comment](/tool#bitbucket-pr-comment)のページを追加
 * [みくもスタンプ](/web#mikumo-stamp)のページを追加
